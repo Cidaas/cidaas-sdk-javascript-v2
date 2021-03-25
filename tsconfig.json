@@ -1,0 +1,30 @@
+{
+    "compileOnSave": false,
+    "angularCompilerOptions": {
+        "fullTemplateTypeCheck": true,
+        "strictInjectionParameters": true,
+        "strictTemplates": true
+    },
+    "compilerOptions": {
+        "baseUrl": "./",
+        "outDir": "./dist/out-tsc",
+        "sourceMap": true,
+        "declaration": false,
+        "module": "es2020",
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "noUnusedLocals": true, /* Report errors on unused locals. */
+        "allowUnusedLabels": false,
+        "experimentalDecorators": true,
+        "target": "es2015",
+        "skipLibCheck": true,
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "lib": [
+            "es2017",
+            "dom"
+        ],
+        "resolveJsonModule": true
+    }
+}
