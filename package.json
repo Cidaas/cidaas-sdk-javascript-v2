@@ -13,7 +13,7 @@
     "build": "webpack --config webpack.prod.js",
     "test": "jest --coverage",
     "test:coverage": "jest --coverage",
-    "lint": "eslint --ext .jsx,.js src/main/"
+    "lint": "eslint --ext .jsx,.js src/main/authentication/"
   },
   "dependencies": {
     "crypto-js": "^3.1.9-1",
