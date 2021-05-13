@@ -688,6 +688,47 @@ cidaas.logoutUser({
 });
 ```
 
+#### Delete User Account
+
+To delete the user account directly in the application, call deleteUserAccount(). This method will delete the user account with requestId as the query parameter.
+
+This method takes an object as input.
+
+##### Sample code
+
+```js
+options = {
+     sub: "7e4f79a9-cfbc-456d-936a-e6bc1de2d4b9",
+     requestId: "7d86460b-8288-4341-aed1-  10dd27a4565c",
+     accept-language: "en"
+}
+```
+
+The usage of the method is as follows.
+
+```js
+cidaas.deleteUserAccount(options).then(function (response) {
+
+   // your success code here
+
+}).catch(function(ex) {
+
+  // your failure code here
+
+});
+```
+
+##### Response
+
+```js
+{
+   "success": true,
+   "status": 200,
+   "data": {
+       "result": true
+   }
+}
+```
 #### Physical Verification
 
 After successful login, we can add multifactor authentications.
@@ -1895,3 +1936,4 @@ this.socket.on("status-update", (msg) => {
     }
 });
 ```
+
